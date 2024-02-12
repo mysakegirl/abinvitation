@@ -1,0 +1,89 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    min-height:90vh;
+    background-color: #DFC0C9;
+}
+
+.p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position:relative;
+    width:400px;
+    height:500px;
+    border-radius:0px 10px 10px 0px;
+    background:#f4f4f4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    perspective: 100em;
+    margin:25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    /* box-shadow:30px 40px 40px rgba(0,0,0,0.2); */
+ }
+ .cover{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: dodgerblue;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition:transform 1s;
+    border-radius:0px 10px 10px 0px;
+    font-size:30px;
+    font-weight: bold;
+   
+ }
+ .card:hover .cover{
+    transform:rotateY(-120deg);
+ }
+ .coverFront, .coverBack{
+    position:absolute;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+
+ }
+ .coverFront{
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 0px 10px 10px 0px ;
+    color:#333;
+  
+ }
+ .coverBack{
+    background: #E9E1E6;
+    border-radius: 10px 0px 0px 10px;
+    /* transform:rotateY(180deg); */
+    background-image: url(../valentines/image/hearts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .sh_img{
+    width:100px;
+ }
+ .sh_btn{
+    border:0px;
+    background: dodgerblue;
+    border-radius: 5px;
+    padding:10px 20px;
+    color:#fff;
+    margin-top:10px;
+ }
+
+ .cb-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B44F53 !important;
+ }
