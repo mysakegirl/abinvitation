@@ -42,9 +42,9 @@ body{
     font-weight: bold;
    
  }
- .card:hover .cover{
+ /* .card:hover .cover{
     transform:rotateY(-120deg);
- }
+ } */
  .coverFront, .coverBack{
     position:absolute;
     width:100%;
@@ -65,7 +65,7 @@ body{
     background: #E9E1E6;
     border-radius: 10px 0px 0px 10px;
     /* transform:rotateY(180deg); */
-    background-image: url(../valentines/image/hearts.png);
+    background-image: url(./image/hearts.png);
     background-repeat: no-repeat;
     background-size: cover;
  }
@@ -82,8 +82,54 @@ body{
  }
 
  .cb-content{
+   margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #B44F53 !important;
  }
+
+ .btn{
+   margin-top: 20px;
+   padding: 0.375rem 0.95rem;
+   color: #fff;
+   background-color: #B44F53;
+   font-weight: 700;
+ }
+
+ .btn:hover{
+   color: #B44F53;
+   background-color: #fff;
+   border: 1px solid #B44F53;
+   font-weight: 800;
+ }
+
+ .by{
+   color: #fff;
+   background-color: #1DB954;
+   border: 0px;
+ }
+
+ .by:hover{
+   color: #fff;
+   background-color: #199143;
+ }
+
+ .bn{
+   color: #fff;
+   background-color: #B44F53;
+   border: 0px;
+ }
+ 
+ .bn:hover{
+   color: #fff;
+   background-color: #96363a;
+ }
+
+ .c-btn{
+   padding: 0.375rem 2rem;
+   font-size: 1rem;
+   border-radius: 5px;
+   margin: 0px 5px;
+ }
+ 
